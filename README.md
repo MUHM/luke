@@ -9,9 +9,9 @@ $ open http://localhost:7001/
 ```
 
 ### DB init
-
+mysql与postgres已经过测试，因id自增问题，暂时未兼容mssql，需手动初始化
 ```bash
-$ yarn migrate
+$ yarn migrate 
 ```
 ### Docker
 
