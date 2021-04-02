@@ -1,37 +1,21 @@
-# server
- 写着玩的服务端
-
-## QuickStart
-
-<!-- add docs here for user -->
-
-see [egg docs][egg] for more detail.
+## 写着玩的服务端
 
 ### Development
 
 ```bash
-$ npm i
-$ npm run dev
+$ yarn
+$ yarn dev
 $ open http://localhost:7001/
 ```
 
-### Deploy
+### DB init
 
 ```bash
-$ npm start
-$ npm stop
+$ yarn migrate
 ```
+### Docker
 
-### npm scripts
-
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
-
-
-[egg]: https://eggjs.org
-
-### db
-
- - npx sequelize-cli db:migrate
- - npx sequelize-cli db:seed:all
+```bash
+$ docker build -t luke/server .
+$ docker run --name luke_server -p 7001:7001 -d luke/server
+```

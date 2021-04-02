@@ -31,8 +31,3 @@ COPY . /usr/src/app
 EXPOSE 7001
 
 CMD npm run docker
-
-#构建应用镜像
-#docker build -t luke/server .
-#NODE_ENV通过启动容器时进行参数传递
-#docker run --name luke_server -p 7001:7001 -d luke/server
