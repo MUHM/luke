@@ -22,7 +22,7 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1603258858098_284';
 
   // add your middleware config here
-  config.middleware = ['errorHandle'];
+  config.middleware = ['errorHandle', 'ipLimit'];
   config.logger = {
     outputJSON: false,
   };
