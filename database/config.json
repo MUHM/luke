@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "luke",
+    "password": "luke",
+    "database": "luke",
+    "host": "10.10.1.9",
+    "port": 5432,
+    "dialect": "postgres",
+    "migrationStorageTableName": "sequelize_meta",
+    "seederStorage": "sequelize",
+    "seederStorageTableName": "sequelize_data",
+    "logging": "console.log"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "define-your-own-databse-for-unittest",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "migrationStorageTableName": "sequelize_meta",
+    "seederStorage": "sequelize",
+    "seederStorageTableName": "sequelize_data"
+  }
+}

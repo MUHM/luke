@@ -1,0 +1,11 @@
+{
+  "extends": "eslint-config-egg",
+  "rules": {
+    "array-bracket-spacing": [
+      0,
+      "never"
+    ],
+    "no-extend-native": 0 ,
+    "no-unneeded-ternary": 0
+  }
+}
