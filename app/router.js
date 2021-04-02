@@ -27,7 +27,6 @@ module.exports = async app => {
   router.get('/api/admin/role/all', authLogin, controller.admin.role.all);
   router.get('/api/admin/organization/all', authLogin, controller.admin.organization.all);
   router.get('/api/admin/project/all', authLogin, controller.admin.project.all);
-  router.get('/api/admin/projectconst', authLogin, controller.admin.systemConst.getProjectConst);
 
   const adminRouter = await model.Permission.findAll();
   adminRouter.forEach(element => {

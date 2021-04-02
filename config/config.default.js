@@ -39,7 +39,7 @@ module.exports = appInfo => {
     redis: {
       host: '10.10.1.9',
       port: 6379,
-      auth_pass: 'PMcJoBbNnX5qzQ',
+      auth_pass: '',
       db: 13,
     },
   };
@@ -54,7 +54,7 @@ module.exports = appInfo => {
           username: 'root',
           password: 'root',
           database: 'luke',
-          port: 3306,
+          port: 5432,
           host: '10.10.1.9',
           timezone: '+08:00',
           logging: false,
@@ -87,7 +87,7 @@ module.exports = appInfo => {
         user: {
           port: 6379,
           host: '10.10.1.9',
-          password: 'PMcJoBbNnX5qzQ',
+          password: '',
           db: 15,
         },
       },
