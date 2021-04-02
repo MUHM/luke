@@ -14,11 +14,7 @@ module.exports = (controller, model) => {
       }
       const { error, value } = ctx.validate(ctx.app.validator[controller][model], ctx.method === 'GET' ? ctx.query : ctx.request.body, false);
       if (error) {
-        ctx.body = {
-          code: 400,
-          message: error.message,
-        };
-        return;
+        ctx.throw(error.message);
       }
       ctx.request.model = value;
     }
