@@ -111,7 +111,7 @@ module.exports = {
       await queryInterface.bulkUpdate('modules', {
         parent_id: 9,
       }, {
-        id: { [Sequelize.Op.in]: [4, 5, 6, 7, 8] }
+        id: { [Sequelize.Op.in]: [4, 5, 6, 7, 8] },
       });
       await queryInterface.bulkInsert('role_modules', [{
         role_id: 1,
@@ -136,7 +136,7 @@ module.exports = {
       await queryInterface.bulkUpdate('modules', {
         parent_id: null,
       }, {
-        id: { [Sequelize.Op.in]: [4, 5, 6, 7, 8] }
+        id: { [Sequelize.Op.in]: [4, 5, 6, 7, 8] },
       }, { transaction });
       await queryInterface.bulkDelete('permissions', { id: { [Sequelize.Op.gte]: 28 } }, { transaction });
       await queryInterface.bulkDelete('modules', { id: 8 }, { transaction });
