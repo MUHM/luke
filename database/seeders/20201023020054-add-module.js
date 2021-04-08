@@ -69,7 +69,7 @@ module.exports = {
       type: 'admin_menu',
       icon: 'lock',
       path: '/admin/permission',
-      sort: 8,
+      sort: 7,
       created_at: new Date(),
       updated_at: new Date(),
     }];

@@ -3,6 +3,7 @@
 module.exports = {
   up: async queryInterface => {
     const organization_action = [{
+      id: 1,
       name: '新增组织',
       description: '新增组织',
       type: '组织',
@@ -15,6 +16,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 2,
       name: '修改组织',
       description: '修改组织',
       type: '组织',
@@ -27,6 +29,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 3,
       name: '删除组织',
       description: '删除组织',
       type: '组织',
@@ -39,6 +42,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 4,
       name: '组织列表',
       description: '组织列表',
       type: '组织',
@@ -51,6 +55,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 5,
       name: '组织详情',
       description: '组织详情',
       type: '组织',
@@ -64,6 +69,7 @@ module.exports = {
       updated_at: new Date(),
     }];
     const project_action = [{
+      id: 6,
       name: '新增项目',
       description: '新增项目',
       type: '项目',
@@ -76,6 +82,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 7,
       name: '修改项目',
       description: '修改项目',
       type: '项目',
@@ -88,6 +95,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 8,
       name: '删除项目',
       description: '删除项目',
       type: '项目',
@@ -100,6 +108,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 9,
       name: '项目列表',
       description: '项目列表',
       type: '项目',
@@ -112,6 +121,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 10,
       name: '项目详情',
       description: '项目详情',
       type: '项目',
@@ -125,6 +135,7 @@ module.exports = {
       updated_at: new Date(),
     }];
     const user_action = [{
+      id: 11,
       name: '新增用户',
       description: '新增用户',
       type: '用户',
@@ -137,6 +148,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 12,
       name: '修改用户',
       description: '修改用户',
       type: '用户',
@@ -149,6 +161,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 13,
       name: '删除用户',
       description: '删除用户',
       type: '用户',
@@ -161,6 +174,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 14,
       name: '用户列表',
       description: '用户列表',
       type: '用户',
@@ -173,6 +187,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 15,
       name: '用户详情',
       description: '用户详情',
       type: '用户',
@@ -185,6 +200,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 16,
       name: '重置用户密码',
       description: '重置用户密码',
       type: '用户',
@@ -198,6 +214,7 @@ module.exports = {
       updated_at: new Date(),
     }];
     const role_action = [{
+      id: 17,
       name: '新增角色',
       description: '新增角色',
       type: '角色',
@@ -210,6 +227,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 18,
       name: '修改角色',
       description: '修改角色',
       type: '角色',
@@ -222,6 +240,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 19,
       name: '删除角色',
       description: '删除角色',
       type: '角色',
@@ -234,6 +253,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 20,
       name: '角色列表',
       description: '角色列表',
       type: '角色',
@@ -246,6 +266,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 21,
       name: '角色详情',
       description: '角色详情',
       type: '角色',
@@ -259,6 +280,7 @@ module.exports = {
       updated_at: new Date(),
     }];
     const module_action = [{
+      id: 22,
       name: '新增模块',
       description: '新增模块',
       type: '模块',
@@ -271,6 +293,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 23,
       name: '修改模块',
       description: '修改模块',
       type: '模块',
@@ -283,6 +306,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 24,
       name: '删除模块',
       description: '删除模块',
       type: '模块',
@@ -295,6 +319,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 25,
       name: '模块列表',
       description: '模块列表',
       type: '模块',
@@ -307,6 +332,7 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
     }, {
+      id: 26,
       name: '模块详情',
       description: '模块详情',
       type: '模块',
@@ -320,6 +346,7 @@ module.exports = {
       updated_at: new Date(),
     }];
     const permission_action = [{
+      id: 27,
       name: '权限列表',
       description: '权限列表',
       type: '权限',
