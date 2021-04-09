@@ -6,7 +6,7 @@ class CrawlerService extends Service {
     super(ctx);
     this.prefix = 'crawler:';
     this.redis = ctx.app.redis.get('core');
-    this.exTime = 1200;
+    this.exTime = ctx.locals.core.crawlerExTime || 1200;
     this.userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36 Edg/89.0.774.68';
     this.cheerio = require('cheerio');
   }
