@@ -12,8 +12,8 @@ module.exports = () => {
       ctx.logger.info('body: %j', ctx.request.body);
       await next();
     } catch (e) {
-      ctx.status = e.status;
-      ctx.body = { code: e.status, message: e.message };
+      ctx.status = e.status || 400;
+      ctx.body = { code: e.status || 400, message: e.message };
     }
   };
 };
