@@ -15,6 +15,8 @@ module.exports = async app => {
   router.get('/api/imgcode/:random', controller.imgCode.index);
   // 外部接口-天气
   router.get('/api/weather', controller.external.weather.index);
+  // 基本信息
+  router.get('/api/admin/systemconst/webconfig', controller.admin.systemConst.webConfig);
 
   // 个人
   router.post('/api/account/login', app.middleware.validator('account', 'login'), controller.account.login);
