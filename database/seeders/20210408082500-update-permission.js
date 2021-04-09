@@ -74,7 +74,7 @@ module.exports = {
       description: '系统常量',
       type: 'admin_menu',
       icon: 'lock',
-      path: '/systemconst',
+      path: '/admin/systemconst',
       sort: 8,
       created_at: new Date(),
       updated_at: new Date(),

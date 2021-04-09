@@ -11,7 +11,7 @@ module.exports = {
       updated_at: new Date(),
     }, {
       const_key: 'ipLimitDuration',
-      const_value: '10000',
+      const_value: '1000',
       type: 'core',
       remark: 'ip_limit配置',
       created_at: new Date(),
